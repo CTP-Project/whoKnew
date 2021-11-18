@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom"
 
 import Avatar from "react-avatar"
 
-export default function Dashboard() {
+export default function Attendance() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
@@ -47,7 +47,7 @@ export default function Dashboard() {
     <nav id="sidebar">
         <div class="sidebar-avatar">
         <Avatar githubHandle="sitebase" size={125} round="100px" /> 
-        <p className="px-4">username</p>
+        <p className="px-4">Welcome</p>
         </div>
 
         <ul class="list-unstyled components">
@@ -56,7 +56,7 @@ export default function Dashboard() {
                 <Link to="/">Dashboard</Link>
             </li>
             <li>
-                <Link to="/attendance">Attendance</Link>
+                <a href="#">Attendance</a>
             </li>
             
             <li>
@@ -70,8 +70,9 @@ export default function Dashboard() {
             </li>
         </ul>
     </nav>
-    <p>This is Dashboard</p>
+<p>This is attendance</p>
 </div>
+
 
 
   )
