@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-
+import Dashboard from './Dashboard'
 import Avatar from "react-avatar"
 
 export default function Attendance() {
@@ -22,6 +22,7 @@ export default function Attendance() {
   }
 
   return (
+    <Dashboard/>
     //Keep this see what code is needed
 
 
@@ -43,35 +44,35 @@ export default function Attendance() {
 
 
 
-    <div class="wrapper">
-    <nav id="sidebar">
-        <div class="sidebar-avatar">
-        <Avatar githubHandle="sitebase" size={125} round="100px" /> 
-        <p className="px-4">Welcome</p>
-        </div>
+//     <div class="wrapper">
+//     <nav id="sidebar">
+//         <div class="sidebar-avatar">
+//         <Avatar githubHandle="sitebase" size={125} round="100px" /> 
+//         <p className="px-4">Welcome</p>
+//         </div>
 
-        <ul class="list-unstyled components">
+//         <ul class="list-unstyled components">
             
-            <li class="active">
-                <Link to="/">Dashboard</Link>
-            </li>
-            <li>
-                <a href="#">Attendance</a>
-            </li>
+//             <li class="active">
+//                 <Link to="/">Dashboard</Link>
+//             </li>
+//             <li>
+//                 <a href="#">Attendance</a>
+//             </li>
             
-            <li>
+//             <li>
 
-            <Link to="/profile">  Profile </Link>
-            </li>
-            <li>
-                  <div className="text-left">
-                        <Button variant="link" onClick={handleLogout}> Log Out  </Button>
-                  </div>
-            </li>
-        </ul>
-    </nav>
-<p>This is attendance</p>
-</div>
+//             <Link to="/profile">  Profile </Link>
+//             </li>
+//             <li>
+//                   <div className="text-left">
+//                         <Button variant="link" onClick={handleLogout}> Log Out  </Button>
+//                   </div>
+//             </li>
+//         </ul>
+//     </nav>
+// <p>This is attendance</p>
+// </div>
 
 
 
