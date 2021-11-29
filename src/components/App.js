@@ -10,6 +10,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Profile from "./Profile"
 import Attendance from "./Attendance"
+import MainPageDash from "./MainPageDash"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/forgot-password" component={ForgotPassword} />
               <Route path="/profile" component={Profile} />
               <Route path="/attendance" component={Attendance} />
+              <Route path="/MainPageDash" component={MainPageDash} />
             </Switch>
           </AuthProvider>
         </Router>

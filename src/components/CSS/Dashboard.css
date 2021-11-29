@@ -1,0 +1,81 @@
+.App{
+    width: 100vw;
+    height:100vh;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+.RowContainer{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.SideBar{
+    height: 100vh;
+    width: 250px;
+    background-color:#2f4050;
+    
+}
+.AvatarSideBar{
+    /* width: 100%;
+     */
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#2f4050;
+}
+.Name{
+   
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.SidebarList{
+    height: auto;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.SidebarList .Row{
+    width: 100%;
+    height: 60px;
+    background-color:#2f4050;
+    /* #2f4050 */
+    /* border: 1px solid black; */
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.SidebarList .Row:hover{
+cursor: pointer;
+background-color:aqua;
+}
+.Row #icon{
+    /* flex: 30%;  */
+    display: grid;
+    place-items:center; 
+    flex:3%;
+}
+
+.Row #title{
+    /* flex: 70%; */
+    flex: 10%;
+}
