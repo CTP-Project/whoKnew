@@ -34,7 +34,7 @@ body{
 .Name{
    
     color: white;
-    font-size: 20px;
+    /* font-size: 20px; */
     text-align: center;
     margin-top: 15px;
 }
@@ -78,4 +78,26 @@ background-color:aqua;
 .Row #title{
     /* flex: 70%; */
     flex: 10%;
+}
+.butt{
+  color:white;
+  /* padding:5px 15px; */
+  border-radius: 5px;
+  outline: 0;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.butt:hover{
+    cursor: pointer;
+    /* background-color:aqua; */
+}
+   
+.btn-link{
+    font-weight: 400;
+    color:white;
+    /* padding:5px 15px; */
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
