@@ -76,7 +76,7 @@ function Dashboard() {
 			<ul className = "SidebarList">
         <div className = "AvatarSideBar">
         <Avatar githubHandle="sitebase" size={125} round="100px" /> 
-        <div className="Name">John Doe</div>
+        <div className="Name">{currentUser.email}</div>
         </div>
         <div className = "RowContainer">
 				{SidebarData.map((val, key) => {
@@ -95,6 +95,13 @@ function Dashboard() {
 				})}
         </div>
 			</ul>
+      <div className="butt">
+      <Button variant="light"onClick={handleLogout}>
+        Logout
+      </Button>
+      
+
+    </div>
 		</div>
 	);
 }
