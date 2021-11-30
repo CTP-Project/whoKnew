@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Avatar from "react-avatar";
 import { SidebarData } from "./SidebarData";
-import  "./CSS/Profile.css";
+import "./CSS/Profile.css";
 
 export default function Profile() {
 	const [error, setError] = useState("");
@@ -25,15 +25,16 @@ export default function Profile() {
 
 	return (
 		<div className="Wrapper">
-      <Dashboard />
+			<Dashboard />
 			<div className="MainColumnContainer">
 				{/* <Avatar googleId="118096717852922241760" size="100" round={true} /> */}
 				{error && <Alert variant="danger">{error}</Alert>}
-				<strong>Email:</strong> {currentUser.email}
-				<Link to="/update-profile" className="btn btn-primary w-0 mt-3">
-					Update Profile
-				</Link>
-			
+				<div className="email">Email: {currentUser?.email || 'no user'}</div>
+				<div className="centertop">
+					<Link to="/update-profile" className="btn btn-primary w-0 mt-3">
+						Update Profile
+					</Link>
+				</div>
 			</div>
 		</div>
 
