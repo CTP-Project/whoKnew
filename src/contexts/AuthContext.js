@@ -54,6 +54,16 @@ export function AuthProvider({ children }) {
     updatePassword
   }
 
+
+  function about(input) {
+    return auth.createAboutMe(input)
+  }
+
+  function updateAbout(input) {
+    return auth.updateAboutMe(input)
+  }
+
+
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}

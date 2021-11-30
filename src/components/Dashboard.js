@@ -17,7 +17,7 @@ function Dashboard() {
 
 		try {
 			await logout();
-			history.push("/login");
+			history.push("/Login");
 		} catch {
 			setError("Failed to log out");
 		}
@@ -76,7 +76,7 @@ function Dashboard() {
 			<ul className = "SidebarList">
         <div className = "AvatarSideBar">
         <Avatar githubHandle="sitebase" size={125} round="100px" /> 
-        <div className="Name">{currentUser.email}</div>
+        <div className="Name">{currentUser?.email || 'no user'}</div>
         </div>
         <div className = "RowContainer">
 				{SidebarData.map((val, key) => {
