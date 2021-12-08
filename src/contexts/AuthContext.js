@@ -55,13 +55,13 @@ export function AuthProvider({ children }) {
   }
 
 
-  function about(input) {
-    return auth.createAboutMe(input)
-  }
+  // function about(input) {
+  //   return auth.createAboutMe(input)
+  // }
 
-  function updateAbout(input) {
-    return auth.updateAboutMe(input)
-  }
+  // function updateAbout(input) {
+  //   return auth.updateAboutMe(input)
+  // }
 
 
   return (

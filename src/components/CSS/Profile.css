@@ -1,29 +1,82 @@
-.Wrapper{
-    display: flex;
+.Wrapper {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: space-between;
+	overflow-y: hidden;
+}
+.MainColumn {
+
+    margin:40px;
     width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    overflow-y: hidden;
-  }
-  .MainColumnContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 100px; */
-  width: 100%;
-  /* margin-left: 307px; */
-  }
-  .email{
-    /* position: fixed;
-    top: 50%;
-    left: 50%; */
-    /* bring your own prefixes */
-    /* transform: translate(-20%, -1500%) */
-  }
-  .centertop{
-    /* position: fixed;
-    top: 50%;
-    left: 50%;  
-    transform: translate(-50%, -5%) */
-  }
+	
+}
+.email {
+}
+.centertop {
+}
+.AboutMeTitle {
+
+	font-family: "Rochester", cursive;
+	font-weight: bold;
+}
+
+.AboutMEInfo {
+	color: black;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-weight: bold;
+    margin-left: 50px;
+    font-size: 50px;
+}
+
+.TextArea {
+	margin-left: 50px;
+	font-family: monospace;
+	font-size: inherit;
+	line-height: inherit;
+}
+.StyleBtn {
+	position: fixed;
+	bottom: 0;
+	left: 250px;
+	width: 300px;
+
+	display: inline-block;
+
+	border-radius: 5px;
+	outline: 0;
+	text-decoration: none;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+.StyleBtn > button:not(:last-child) {
+	margin-right: 20px;
+}
+.editAboutMe {
+}
+.button{
+    position: fixed;
+	bottom: 0;
+	left: 560px;
+	width: 300px;
+
+}
+
+
+
+/* 
+    not used css
+    
+    
+    padding: 12px 12px;
+    margin: 19px 100px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    
+     /* padding:5px 15px;
+    border-radius: 5px;
+    outline: 0;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
